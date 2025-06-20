@@ -1,0 +1,221 @@
+body{background: url('https://images.unsplash.com/photo-1523978591478-c753949ff840?auto=format&fit=crop&w=1500&q=80');
+background-size: cover;
+background-position: bottom;
+background-attachment: fixed;
+color: aliceblue;
+overflow:hidden;
+}
+.searchBarParentDiv {
+    width: 50%;
+    height: fit-content;
+    position: relative;
+    padding:8px;
+}
+.inputfield {
+    width: 100%;
+    outline: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 1.25rem;
+    border: 0px;
+}
+
+.searchIcon {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.searchIcon:hover {
+    cursor: pointer;
+}
+
+.date,.clock,.day{
+    display: flex;
+    gap:2rem;
+    margin: 0%;
+}
+.container{
+    width:100vw;
+    height: 100vh;
+}
+.searchBar{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width:50%;
+    height:40px;
+    border-radius:25px;
+}
+.context{
+    height: 90vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.leftContext{
+    width:30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.rightContext{
+    width:70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.leftbox{
+    height:40vh;
+    box-shadow:0 0 1rem black;
+    width:90%;
+    margin:auto;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    padding:8px;
+    
+}
+p{
+    margin: 0%;
+    font-size: 1.5rem;
+}
+.day p{
+    margin:0;
+    padding:0;
+    font-size: 1.5rem;
+}
+.rightDiv{
+    width: 100%;
+    height:30vh ;
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+}
+.rightbox1{
+    height:80%;
+    padding: 10px;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    box-shadow: 0 0 1rem black;
+    border-radius: 8px;
+    backdrop-filter:blur(15px);
+}
+
+.box,.box5,.box4{
+    display: flex;
+    align-items: center;
+    gap:3rem;
+}
+.day{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.daydegree{
+    display: flex;
+    align-items: center;
+    gap:1rem
+}
+.box4{
+    gap:1.5rem
+}
+.box1{
+width:20%
+}
+.box2{
+width:40%
+}
+.box3{
+width:10%;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+@media only screen and (max-width:768px) {
+    body{
+        overflow: auto;
+    }
+    .container{
+        height:auto;
+    }
+   
+    .searchBar{
+        height: 10%;
+        width:100%;
+    }
+    .leftContext,.rightContext{
+        width:90%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .leftbox,.rightDiv{
+        width:90%;
+        height:auto;
+        margin: 0;
+    }
+    .rightbox1{
+        width: 100%;
+    }
+    .context{
+        height:100%;
+        flex-direction: column;
+        justify-content: center;
+        gap:2rem;
+    }
+    .rightContext{
+        margin-left: 0rem;
+        flex-direction: column;
+        gap:2rem;
+        width:90%;
+         
+    }
+    .rightDiv{
+        flex-direction: column;
+       height:auto;
+       gap:1rem;
+       width:100%
+    }
+    .box{
+        gap:2rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .box5{
+        display:flex;
+        flex-direction: row;
+
+    }
+    .box1,.box2,.box3{
+        width:90%;
+    }
+    .day{
+        gap:2rem
+    }
+    .box,.box5,.box4{
+    gap:5rem;
+    }
+
+}
+@media only screen and (max-width:1300px){
+    .day{
+        gap:0.5rem
+    }
+    .box,.box5,.box4{
+    gap:1.5rem;
+    }
+}
+@media only screen and (max-width:900px){
+    .day{
+        gap:0.5rem
+    }
+    .box,.box5,.box4{
+    gap:3rem;
+    }
+}
